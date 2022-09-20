@@ -10,4 +10,4 @@ ___
 ## Contents
 
 1. Using `react-app-rewired` for absolute paths in Typescript
-2. 
+2. Custom theme system with "styled components"
