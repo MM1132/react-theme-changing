@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    // This is solely for the code-checking, not to get red lines under
+    "paths": {
+      "src/*": ["./src/*"]
+    }
+  }
+}
