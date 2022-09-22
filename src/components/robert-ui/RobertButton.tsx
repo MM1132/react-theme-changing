@@ -1,7 +1,6 @@
-import React, { useContext } from "react"
-import { ThemeContext } from "src/providers/ThemeProvider"
+import React from "react"
 import styled from 'styled-components';
-import { ThemeProviderValue } from "src/providers/ThemeProvider/type/ThemeProvider"
+import { useThemeContext } from "src/providers/ThemeContextProvider";
 
 export interface RobertButtonProps extends React.HTMLProps<any> {
   clickHandler?(...props: any): void
@@ -24,7 +23,7 @@ const Button = styled.button`
 `;
 
 export function RobertButton({children, clickHandler}: RobertButtonProps):JSX.Element {
-  const { theme } = useContext(ThemeContext) as ThemeProviderValue
+  const { theme } = useThemeContext()
 
   return (
     <Button

@@ -5,15 +5,13 @@ import { Header } from "src/components/layout/Header"
 import { Main } from "src/components/layout/Main"
 
 // THEME
-import { ThemeProvider } from "src/providers/ThemeProvider"
+import { ThemeContextProvider } from "./providers/ThemeContextProvider"
 
-export function App():JSX.Element {
-  const darkTheme = "Dark theme context value"
-
+export function App(): JSX.Element {
   return (
-      <ThemeProvider>
+      <ThemeContextProvider>
         <Header/>
         <Main/>
-      </ThemeProvider>
+      </ThemeContextProvider>
   );
 }
